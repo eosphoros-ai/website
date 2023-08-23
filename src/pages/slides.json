@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The complete reference for IOTA",
+    "description": "Build apps capable of taking millions of users on journeys they’ve never been on before. Simple. Scalable. Secure.",
+    "outlinedButton": {
+      "buttonText": "Learn About IOTA",
+      "url": "/getting_started"
+    },
+    "solidButton": {
+      "buttonText": "Start building",
+      "url": "/getting_started"
+    },
+    "imagePath": "/img/homepage/header.svg"
+  },
+  {
+    "title": "Send IOTA Tokens with Javascript",
+    "description": "Learn how to create your seed, addres, send IOTA Tokens and retrieve your balance in the Devnet.",
+    "imagePath": "/img/homepage/resources_bot.svg",
+    "solidButton": {
+      "buttonText": "Start tutorial",
+      "url": "/getting_started"
+    }
+  }
+]
