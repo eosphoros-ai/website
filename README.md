@@ -1,11 +1,8 @@
 # DB-GPT Website
 
-[DB-GPT](http://dbgpt.io) is an experimental open-source project that uses localized GPT large models to interact with your data and environment. With this solution, you can be assured that there is no risk of data leakage, and your data is 100% private and secure.
+[DB-GPT](http://dbgpt.io) 
 
-![framework](static/img/framework_tt.svg)
-
-## Installation
-
+## How to develop
 ```commandline
 
 # clone current project firstly!
