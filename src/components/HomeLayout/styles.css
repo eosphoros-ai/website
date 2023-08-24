@@ -67,14 +67,6 @@
   font-size: calc(0.75rem * var(--ifm-button-size-multiplier));
 }
 
-.intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  background: right bottom / 45% no-repeat url('/img/homepage/header.svg');
-}
-
 @media (max-width: 996px) {
   .intro {
     background: none;
@@ -218,15 +210,6 @@
   background-color: #16d4bf;
 }
 
-.networks__icon--iota {
-  fill: white;
-  background-color: var(--ifm-color-gray-900);
-}
-
-:root[data-theme='dark'] .networks__icon--iota {
-  background-color: var(--ifm-color-gray-800);
-}
-
 .networks__label {
   font-weight: 800;
   font-size: 0.8rem;
@@ -253,56 +236,15 @@
   margin: 0.5rem 0;
 }
 
-.networks__feature::before {
-  content: url('/img/homepage/loading.svg');
-  width: 24px;
-  height: 24px;
-  margin-right: 1rem;
-}
-
-.networks__feature--done::before {
-  content: url('/img/homepage/checkmark.svg');
-}
-
 .networks__button {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.start-building {
-  background: left top / 40% auto no-repeat
-      url('/img/homepage/smartcontracts_bot.svg'),
-    right bottom no-repeat url('/img/homepage/smartcontracts_circle.svg');
-  width: 100%;
-  min-height: 30rem;
-  padding-right: 2rem;
-  padding-left: 40%;
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: var(--ifm-global-radius);
-}
-
-@media (max-width: 996px) {
-  .start-building {
-    background: right bottom no-repeat
-      url('/img/homepage/smartcontracts_circle.svg');
-    padding: 2rem;
-    min-height: auto;
-  }
 }
 
 .start-building__header {
   font-family: 'Metropolis Regular';
   display: flex;
   align-items: center;
-}
-
-.start-building__header::before {
-  content: url('/img/homepage/smartcontracts_logo.svg');
-  width: 65px;
-  height: 65px;
-  margin-right: 1rem;
 }
 
 .start-building__description {
@@ -540,21 +482,6 @@
 :root[data-theme='dark'] .resources__card {
   box-shadow: none;
   background-color: var(--ifm-color-emphasis-100);
-}
-
-.resources__card--logo {
-  background: center center / 80% no-repeat
-      url('/img/homepage/resources_bot.svg'),
-    var(--ifm-color-emphasis-0);
-  grid-row: span 2;
-  justify-content: right;
-  cursor: unset;
-}
-
-:root[data-theme='dark'] .resources__card--logo {
-  background: center center / 80% no-repeat
-      url('/img/homepage/resources_bot.svg'),
-    var(--ifm-color-emphasis-100);
 }
 
 .resources__card--logo:hover {
