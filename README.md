@@ -1,6 +1,6 @@
 # DB-GPT Website
 
-[DB-GPT Website](http://dbgpt.io) 
+[DB-GPT Website](http://dbgpt.site) 
 
 ## How to develop
 ```commandline
