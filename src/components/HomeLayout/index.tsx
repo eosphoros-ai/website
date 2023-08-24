@@ -153,6 +153,11 @@ export default function HomeLayout() {
             </Link>
           </div>
         </HomepageSection>
+
+        <HomepageSection header='Framework' description='Introduction to Framework'>
+          <img src="/img/artificial-intelligence.svg" style={{height: 500}}/>
+        </ HomepageSection>
+
         <HomepageSection header='Contact us'>
           <div className='further__cards'>
             <Link to='https://discord.gg/erwfqcMP' className='further__card'>

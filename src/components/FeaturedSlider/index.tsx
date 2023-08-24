@@ -26,7 +26,7 @@ export default function FeaturedSlider() {
           style={{
             backgroundColor: 'transparent',
             backgroundImage: ` url(${slide.imagePath})`,
-            backgroundSize: '45%',
+            backgroundSize: '35%',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'bottom right',
           }}
