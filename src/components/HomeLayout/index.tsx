@@ -1,6 +1,3 @@
-import NodesImg from '@site/static/img/section_nodes.png';
-import NodesImgDark from '@site/static/img/section_nodes_dark.png';
-import ThemedImage from '@theme/ThemedImage';
 import React, { FC } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -8,16 +5,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import clsx from 'clsx';
 import './styles.css';
 import {
-  Chronicle,
-  Discord,
-  Hornet,
-  IntegrationServices,
-  IotaCore,
-  IotaToken,
-  PickAWallet,
-  Search,
-  Tips,
-  Tutorials,
   Tool1,
   Tool2,
   Tool3,
@@ -35,10 +22,7 @@ import {
   CommWechat,
   CommDiscord,
   CommGithub2,
-  DBGPTFramework,
 } from '@site/src/common/icons';
-import CoreLibrariesSection from './CoreLibrariesSection';
-import AppLibrariesSection from './AppLibrariesSection';
 import FeaturedSlider from '@site/src/components/FeaturedSlider';
 
 interface HomepageSectionProps {

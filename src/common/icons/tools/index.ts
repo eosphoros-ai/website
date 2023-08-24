@@ -17,5 +17,3 @@ export { default as CommDiscord } from './discord.svg';
 export { default as CommWechat } from './wechat.svg';
 export { default as CommGithub } from './github.svg';
 export { default as CommGithub2 } from './github2.svg';
-
-export { default as DBGPTFramework } from './dbgpt_framework.png';
