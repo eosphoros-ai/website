@@ -139,7 +139,7 @@ export default function HomeLayout() {
         </HomepageSection>
 
         <HomepageSection header='Framework' description='Introduction to Framework'>
-          <img src="/img/frame_work_tt.svg" style={{height: 500}}/>
+          <img src="/img/framework_tt.svg" style={{height: 500}}/>
         </ HomepageSection>
 
         <HomepageSection header='Contact us'>

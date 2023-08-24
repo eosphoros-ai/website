@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'eosphoros', // Usually your GitHub org/user name.
+  organizationName: 'eosphoros-ai', // Usually your GitHub org/user name.
   projectName: 'DB-GPT', // Usually your repo name.
 
   onBrokenLinks: 'warn',
