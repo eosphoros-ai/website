@@ -85,7 +85,7 @@ export default function HomeLayout() {
         <HomepageSection header='Abilities' description='Introduction to Framework Capabilities'>
           <div className='about__cards'>
             <Link
-              to='/docs/getting_started' className='about__card'>
+              to='/docs/modules/llms' className='about__card'>
               <div className='about__section'>
                 <div className='about__icon'>
                   <ToolDev />
@@ -96,7 +96,7 @@ export default function HomeLayout() {
                 </p>
               </div>
             </Link>
-            <Link to='/docs/getting_started' className='about__card'>
+            <Link to='/docs/modules/vector/chroma' className='about__card'>
               <div className='about__section'>
                 <div className='about__icon'>
                   <ToolPerson />
@@ -107,7 +107,7 @@ export default function HomeLayout() {
                 </p>
               </div>
             </Link>
-            <Link to='/docs/getting_started' className='about__card'>
+            <Link to='/docs/getting_started/application/chatdb' className='about__card'>
               <div className='about__section'>
                 <div className='about__icon'>
                   <ToolData />
@@ -118,7 +118,7 @@ export default function HomeLayout() {
                 </p>
               </div>
             </Link>
-            <Link to='/docs/getting_started' className='about__card'>
+            <Link to='/docs/modules/knowledge/markdown/markdown_embedding' className='about__card'>
               <div className='about__section'>
                 <div className='about__icon'>
                   <ToolProduct />
@@ -140,7 +140,7 @@ export default function HomeLayout() {
                 </p>
               </div>
             </Link>
-            <Link to='/docs/getting_started' className='about__card'>
+            <Link to='/docs/use_cases/tool_use_with_plugin' className='about__card'>
               <div className='about__section'>
                 <div className='about__icon'>
                   <ToolCloud />
