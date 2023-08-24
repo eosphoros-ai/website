@@ -6,10 +6,10 @@
 ```commandline
 
 # clone current project firstly!
-# install docusaurus dependencies, generate .docusaurus and node_modules folder.
-npm install
+# install docusaurus dependencies, generate node_modules folder.
+sudo yarn install
 
-# build project.
+# build project, generate .docusaurus folder.
 sudo npm run build 
 
 # launch project.
