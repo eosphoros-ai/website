@@ -22,5 +22,5 @@ The default service starts on port `3000`, visit `localhost:3000`
 
 ```commandline
 docker build -t dbgptweb .
-docker run --restart=unless-stopped -p 3000:3000 dbgptweb
+docker run --restart=unless-stopped -d -p 3000:3000 dbgptweb
 ```
