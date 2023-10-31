@@ -1,7 +1,7 @@
 ---
 slug: welcome
 title: Welcome
-authors: [csunny, Aries-ckt, yhjun1026, xuyuan23, yihong0618, zhanghy-sketchzh, fangyinc, wangzaistone, qutcat1997]
+authors: [csunny, Aries-ckt, yhjun1026, xuyuan23, yihong0618, zhanghy-sketchzh, fangyinc, wangzaistone, qutcat1997, Aralhi, Ifffff]
 tags: [eosphoros-ai, DB-GPT, github]
 ---
 

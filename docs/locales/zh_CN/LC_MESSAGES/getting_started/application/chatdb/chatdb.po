@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DB-GPT 👏👏 0.3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-22 13:28+0800\n"
+"POT-Creation-Date: 2023-09-26 17:51+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,17 +20,19 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 #: ../../getting_started/application/chatdb/chatdb.md:1
-#: 45e6efede20d49d49f9e658bae7f4c08
+#: 0cf45852c1fd430090da81836bc961c7
 msgid "ChatData & ChatDB"
 msgstr "ChatData & ChatDB"
 
 #: ../../getting_started/application/chatdb/chatdb.md:3
-#: 777a279edbf4491095d24922ebe873a7
+#: 6dc94a787ff844caa21074d71aaf351a
+#, fuzzy
 msgid ""
 "ChatData generates SQL from natural language and executes it. ChatDB "
 "involves conversing with metadata from the Database, including metadata "
 "about databases, tables, and fields.![db plugins "
-"demonstration](../../../../assets/chat_data/chat_data.jpg)"
+"demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/d8bfeee9-e982-465e-a2b8-1164b673847e)"
 msgstr ""
 "ChatData 是会将自然语言生成SQL，并将其执行。ChatDB是与Database里面的元数据，包括库、表、字段的元数据进行对话.![db "
 "plugins demonstration](../../../../assets/chat_data/chat_data.jpg)"
@@ -39,118 +41,185 @@ msgstr ""
 #: ../../getting_started/application/chatdb/chatdb.md:20
 #: ../../getting_started/application/chatdb/chatdb.md:24
 #: ../../getting_started/application/chatdb/chatdb.md:28
-#: ../../getting_started/application/chatdb/chatdb.md:40
-#: ../../getting_started/application/chatdb/chatdb.md:45
-#: 310dbee2849740f6946efa1a062bb87c 8e07c72f882341da8c342a657e88f162
-#: a016749ede034252b30557415226db56 c8513e01123443cbbb0e1afc26d46fff
-#: dad795c828cf453ab6faf22497bc0465
+#: ../../getting_started/application/chatdb/chatdb.md:43
+#: ../../getting_started/application/chatdb/chatdb.md:48
+#: ../../getting_started/application/chatdb/chatdb.md:54
+#: 826032e82a0a40b2bd122a90a35d0161 91652ef9e3224290b0c89112bcca4474
+#: d396ffa33eef4bef8471040369414420 d7f176a7794048d3ac3573970db86d9d
+#: f80e5611eca64f86baeeed6c860061f9
 msgid "db plugins demonstration"
 msgstr "db plugins demonstration"
 
 #: ../../getting_started/application/chatdb/chatdb.md:7
-#: 5c9db27b472f4edfab8e0a0d6ea0f958
+#: aa0f978d3ad34b71aacf143a4c807ba1
 msgid "1.Choose Datasource"
 msgstr "1.Choose Datasource"
 
 #: ../../getting_started/application/chatdb/chatdb.md:9
-#: 1a503a45cb134430b6619812a27cf371
+#: 8a2338e2fbae44f1b61b2fcf062499d3
 msgid ""
 "If you are using DB-GPT for the first time, you need to add a data source"
 " and set the relevant connection information for the data source."
 msgstr "如果你是第一次使用DB-GPT, 首先需要添加数据源，设置数据源的相关连接信息"
 
 #: ../../getting_started/application/chatdb/chatdb.md:13
-#: 70a1af47305b4adebb7d10cc87c63b5c
+#: f1d165ab8b564445880e581a2e554434
 msgid "there are some example data in DB-GPT-NEW/DB-GPT/docker/examples"
 msgstr "在DB-GPT-NEW/DB-GPT/docker/examples有数据示例"
 
 #: ../../getting_started/application/chatdb/chatdb.md:15
-#: d53369cf3c714865b2cacf5a8e203848
+#: dd390cb518094c96bf5430bfa821830f
 msgid "you can execute sql script to generate data."
 msgstr "你可以通过执行sql脚本生成测试数据"
 
 #: ../../getting_started/application/chatdb/chatdb.md:18
-#: c031dd7c1f704cd8b5cb868222cfa318
+#: aebd974d23124daa80af6d74431d1ce3
 msgid "1.1 Datasource management"
 msgstr "1.1 Datasource management"
 
 #: ../../getting_started/application/chatdb/chatdb.md:20
-#: 7125e6532f0549cf9886a2e4d7de90ce
-msgid "![db plugins demonstration](../../../../assets/chat_data/db_entry.png)"
-msgstr "![db plugins demonstration](../../../../assets/chat_data/db_entry.png)"
+#: af4d12aaed5c4fc484a3e7a755a666c2
+msgid ""
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/7678f07e-9eee-40a9-b980-5b3978a0ed52)"
+msgstr ""
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/7678f07e-9eee-40a9-b980-5b3978a0ed52)"
 
 #: ../../getting_started/application/chatdb/chatdb.md:22
-#: b8097bea350444378b331878aa863e0a
+#: 34b7b9ce0f0142af8179a8e1763a32f8
 msgid "1.2 Connection management"
 msgstr "1.2 Connection管理"
 
 #: ../../getting_started/application/chatdb/chatdb.md:24
-#: 996b028a57db49099dd4560f713b9d57
-msgid "![db plugins demonstration](../../../../assets/chat_data/db_connect.png)"
-msgstr "![db plugins demonstration](../../../../assets/chat_data/db_connect.png)"
+#: 00a1af9f4e0a45b9a398f641c8198114
+msgid ""
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/25b8f5a9-d322-459e-a8b2-bfe8cb42bdd6)"
+msgstr ""
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/25b8f5a9-d322-459e-a8b2-bfe8cb42bdd6)"
 
 #: ../../getting_started/application/chatdb/chatdb.md:26
-#: 3ecdb59a329e44fdb69fde720c86de82
+#: 3b8efc25b482480b8d0f4afe5304ece0
 msgid "1.3 Add Datasource"
 msgstr "1.3 添加Datasource"
 
 #: ../../getting_started/application/chatdb/chatdb.md:28
-#: 9e1a14be9a75473ca73fb463d52eb688
+#: d36a476e1eb34a46b2d35e6c1c4c39dd
 msgid ""
-"![db plugins "
-"demonstration](../../../../assets/chat_data/add_datasource.png)"
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/19ce31a7-4061-4da8-a9cb-efca396cc085)"
 msgstr ""
-"![db plugins "
-"demonstration](../../../../assets/chat_data/add_datasource.png)"
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/19ce31a7-4061-4da8-a9cb-efca396cc085)"
 
 #: ../../getting_started/application/chatdb/chatdb.md:31
-#: 9e7471c68e2849438cfb8838ab2936df
+#: 9205388f91404099bf1add6d55f33801
 msgid "now DB-GPT support Datasource Type"
 msgstr "DB-GPT支持数据源类型"
 
-#: ../../getting_started/application/chatdb/chatdb.md:32
-#: cec1011e56d543219cddd38a461c8c96
+#: ../../getting_started/application/chatdb/chatdb.md:33
+#: 197722ccd9e54f8196e3037f0ebd4165
 msgid "Mysql"
 msgstr "Mysql"
 
-#: ../../getting_started/application/chatdb/chatdb.md:33
-#: f2aa6b4365a44a729bc7effa472ac2d5
+#: ../../getting_started/application/chatdb/chatdb.md:34
+#: e859c194648440b19941a42635f37ac5
 msgid "Sqlite"
 msgstr "Sqlite"
 
-#: ../../getting_started/application/chatdb/chatdb.md:34
-#: 9695394c8509482ab86e96fead3d11ca
+#: ../../getting_started/application/chatdb/chatdb.md:35
+#: 91c695f437064f01bf1d7c85a0ecf5b4
 msgid "DuckDB"
 msgstr "DuckDB"
 
-#: ../../getting_started/application/chatdb/chatdb.md:35
-#: 92a13f0678764840842c140d244cebe9
+#: ../../getting_started/application/chatdb/chatdb.md:36
+#: 0a8ff591969c4944890415a84aa64173
 msgid "Clickhouse"
 msgstr "Clickhouse"
 
+#: ../../getting_started/application/chatdb/chatdb.md:37
+#: d52ec849653141dc95862e82ce5777e0
+#, fuzzy
+msgid "Mssql"
+msgstr "Mysql"
+
 #: ../../getting_started/application/chatdb/chatdb.md:38
-#: 727244f8ae0b4cb7a8a7aa13c17e717e
+#: 430a72d857114422aeecd5595df41881
+msgid "Spark"
+msgstr "Spark"
+
+#: ../../getting_started/application/chatdb/chatdb.md:41
+#: b615a70971e7443291ba33e8bc12b437
 msgid "2.ChatData"
 msgstr "2.ChatData"
 
-#: ../../getting_started/application/chatdb/chatdb.md:40
-#: 165eb7ebefcd4bd0aabc5d664f3c86b1
+#: ../../getting_started/application/chatdb/chatdb.md:42
+#: e3542c64926143958e71c7cb21d25c78
+msgid "Preview Mode"
+msgstr "Preview Mode"
+
+#: ../../getting_started/application/chatdb/chatdb.md:43
+#: e32f26b7c22141e181b5345a644dffd5
+#, fuzzy
 msgid ""
 "After successfully setting up the data source, you can start conversing "
 "with the database. You can ask it to generate SQL for you or inquire "
 "about relevant information on the database's metadata. ![db plugins "
-"demonstration](../../../../assets/chat_data/chatdata_eg.png)"
+"demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/8acf6a42-e511-48ff-aabf-3d9037485c1c)"
 msgstr ""
 "设置数据源成功后就可以和数据库进行对话了。你可以让它帮你生成SQL，也可以和问它数据库元数据的相关信息。 ![db plugins "
 "demonstration](../../../../assets/chat_data/chatdata_eg.png)"
 
-#: ../../getting_started/application/chatdb/chatdb.md:44
-#: 1562102c112248aab781dd58f7f328dd
+#: ../../getting_started/application/chatdb/chatdb.md:47
+#: 4d5c0465a01b4f5a964d0e803f9cbc89
+msgid "Editor Mode"
+msgstr "Editor Mode"
+
+#: ../../getting_started/application/chatdb/chatdb.md:48
+#: 79b088787e8f43258bcc4292c89ad1b0
+msgid ""
+"In Editor Mode, you can edit your sql and execute it. ![db plugins "
+"demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/1a896dc1-7c0e-4354-8629-30357ffd8d7f)"
+msgstr ""
+"编辑器模式下可以在线编辑sql进行调试. ![db plugins demonstration](https://github.com"
+"/eosphoros-ai/DB-"
+"GPT/assets/13723926/1a896dc1-7c0e-4354-8629-30357ffd8d7f)"
+
+#: ../../getting_started/application/chatdb/chatdb.md:52
+#: 9efaf27749614cd4bea07146edddf558
 msgid "3.ChatDB"
 msgstr "3.ChatDB"
 
-#: ../../getting_started/application/chatdb/chatdb.md:45
-#: 8cbcf39784464bc1b62abf10f17658cc
-msgid "![db plugins demonstration](../../../../assets/chat_data/chatdb_eg.png)"
-msgstr "![db plugins demonstration](../../../../assets/chat_data/chatdb_eg.png)"
+#: ../../getting_started/application/chatdb/chatdb.md:54
+#: b2dc15f067064c60974e532c3e2f5893
+msgid ""
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/e04bc1b1-2c58-4b33-af62-97e89098ace7)"
+msgstr ""
+"![db plugins demonstration](https://github.com/eosphoros-ai/DB-"
+"GPT/assets/13723926/e04bc1b1-2c58-4b33-af62-97e89098ace7)"
+
+#~ msgid "![db plugins demonstration](../../../../assets/chat_data/db_entry.png)"
+#~ msgstr "![db plugins demonstration](../../../../assets/chat_data/db_entry.png)"
+
+#~ msgid ""
+#~ "![db plugins "
+#~ "demonstration](../../../../assets/chat_data/db_connect.png)"
+#~ msgstr ""
+#~ "![db plugins "
+#~ "demonstration](../../../../assets/chat_data/db_connect.png)"
+
+#~ msgid ""
+#~ "![db plugins "
+#~ "demonstration](../../../../assets/chat_data/add_datasource.png)"
+#~ msgstr ""
+#~ "![db plugins "
+#~ "demonstration](../../../../assets/chat_data/add_datasource.png)"
+
+#~ msgid "![db plugins demonstration](../../../../assets/chat_data/chatdb_eg.png)"
+#~ msgstr "![db plugins demonstration](../../../../assets/chat_data/chatdb_eg.png)"
 

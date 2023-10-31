@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DB-GPT 👏👏 0.3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 23:29+0800\n"
+"POT-Creation-Date: 2023-09-20 17:34+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,80 +20,94 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 #: ../../getting_started/install/llm/llm.rst:2
-#: ../../getting_started/install/llm/llm.rst:23
-#: 9e4baaff732b49f1baded5fd1bde4bd5
+#: ../../getting_started/install/llm/llm.rst:25
+#: 5242ca319fab49988e018cd5b5d893df
 msgid "LLM Usage"
 msgstr "LLM使用"
 
-#: ../../getting_started/install/llm/llm.rst:3 d80e7360f17c4be889f220e2a846a81e
+#: ../../getting_started/install/llm/llm.rst:3 b12a86c062f441cd870e94d56146e6ea
 msgid ""
 "DB-GPT provides a management and deployment solution for multiple models."
 " This chapter mainly discusses how to deploy different models."
 msgstr "DB-GPT提供了多模型的管理和部署方案，本章主要讲解针对不同的模型该怎么部署"
 
-#: ../../getting_started/install/llm/llm.rst:18
-#: 1cebd6c84b924eeb877ba31bd520328f
+#: ../../getting_started/install/llm/llm.rst:20
+#: a7e76642fec94a658a48ced7b4133a61
 msgid ""
 "Multi LLMs Support, Supports multiple large language models, currently "
 "supporting"
 msgstr "目前DB-GPT已适配如下模型"
 
-#: ../../getting_started/install/llm/llm.rst:9 1163d5d3a8834b24bb6a5716d4fcc680
+#: ../../getting_started/install/llm/llm.rst:9 9dbc17aae88a4d2fa4c291d58e8390e2
+msgid "🔥 InternLM(7b,20b)"
+msgstr ""
+
+#: ../../getting_started/install/llm/llm.rst:10
+#: 7d423bfe0c9f41758f0bf55e30803955
+#, fuzzy
+msgid "🔥 Baichuan2(7b,13b)"
+msgstr "Baichuan(7b,13b)"
+
+#: ../../getting_started/install/llm/llm.rst:11
+#: 2e44b9f9f2a842d1969255610974f9c0
 msgid "🔥 Vicuna-v1.5(7b,13b)"
 msgstr "🔥 Vicuna-v1.5(7b,13b)"
 
-#: ../../getting_started/install/llm/llm.rst:10
-#: 318dbc8e8de64bfb9cbc65343d050500
+#: ../../getting_started/install/llm/llm.rst:12
+#: ea32bf9802054af396accaf55291a3a1
 msgid "🔥 llama-2(7b,13b,70b)"
 msgstr "🔥 llama-2(7b,13b,70b)"
 
-#: ../../getting_started/install/llm/llm.rst:11
-#: f2b1ef2bfbde46889131b6852d1211e8
+#: ../../getting_started/install/llm/llm.rst:13
+#: fc39e32250424dbaa7c0c65d45a01983
 msgid "WizardLM-v1.2(13b)"
 msgstr "WizardLM-v1.2(13b)"
 
-#: ../../getting_started/install/llm/llm.rst:12
-#: 2462160e5928434aaa6f58074b585c14
+#: ../../getting_started/install/llm/llm.rst:14
+#: e17ed83eba5a46ea9950c8ba719403ba
 msgid "Vicuna (7b,13b)"
 msgstr "Vicuna (7b,13b)"
 
-#: ../../getting_started/install/llm/llm.rst:13
-#: 61cc1b9ed1914e379dee87034e9fbaea
+#: ../../getting_started/install/llm/llm.rst:15
+#: a13575c9b1b1458282d5a6351128735f
 msgid "ChatGLM-6b (int4,int8)"
 msgstr "ChatGLM-6b (int4,int8)"
 
-#: ../../getting_started/install/llm/llm.rst:14
-#: 653f5fd3b6ab4c508a2ce449231b5a17
+#: ../../getting_started/install/llm/llm.rst:16
+#: 504b4a29240d4e69a258d5ca4d0846d2
 msgid "ChatGLM2-6b (int4,int8)"
 msgstr "ChatGLM2-6b (int4,int8)"
 
-#: ../../getting_started/install/llm/llm.rst:15
-#: 6a1cf7a271f6496ba48d593db1f756f1
+#: ../../getting_started/install/llm/llm.rst:17
+#: 0edd5c73197e4e5d9691665dc79e78b0
 msgid "guanaco(7b,13b,33b)"
 msgstr "guanaco(7b,13b,33b)"
 
-#: ../../getting_started/install/llm/llm.rst:16
-#: f15083886362437ba96e1cb9ade738aa
+#: ../../getting_started/install/llm/llm.rst:18
+#: bd97e381ac6743e4a03df54b980ac5b9
 msgid "Gorilla(7b,13b)"
 msgstr "Gorilla(7b,13b)"
 
-#: ../../getting_started/install/llm/llm.rst:17
-#: 5e1ded19d1b24ba485e5d2bf22ce2db7
+#: ../../getting_started/install/llm/llm.rst:19
+#: 8d46081371b34471ba8f1dbc374955be
 msgid "Baichuan(7b,13b)"
 msgstr "Baichuan(7b,13b)"
 
-#: ../../getting_started/install/llm/llm.rst:18
-#: 30f6f71dd73b48d29a3647d58a9cdcaf
+#: ../../getting_started/install/llm/llm.rst:20
+#: 08a1d4b2abac4effbc236fcd38f9a205
 msgid "OpenAI"
 msgstr "OpenAI"
 
-#: ../../getting_started/install/llm/llm.rst:20
-#: 9ad21acdaccb41c1bbfa30b5ce114732
+#: ../../getting_started/install/llm/llm.rst:22
+#: 4f1e438738854cf1ad35800ddbeb9e12
 msgid "llama_cpp"
 msgstr "llama_cpp"
 
-#: ../../getting_started/install/llm/llm.rst:21
-#: b5064649f7c9443c9b9f15ec7fc02434
+#: ../../getting_started/install/llm/llm.rst:23
+#: 5db1549fcfca4744b441cde5922d7fd3
 msgid "quantization"
 msgstr "quantization"
+
+#~ msgid "cluster deployment"
+#~ msgstr ""
 

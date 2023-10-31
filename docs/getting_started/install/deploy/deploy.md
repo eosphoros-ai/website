@@ -6,8 +6,19 @@ This tutorial gives you a quick walkthrough about use DB-GPT with you environmen
 
 To get started, install DB-GPT with the following steps.
 
-### 1. Hardware Requirements 
-As our project has the ability to achieve ChatGPT performance of over 85%, there are certain hardware requirements. However, overall, the project can be deployed and used on consumer-grade graphics cards. The specific hardware requirements for deployment are as follows:
+### 1. Hardware Requirements
+ DB-GPT can be deployed on servers with low hardware requirements or on servers with high hardware requirements.
+
+##### Low hardware requirements
+The low hardware requirements mode is suitable for integrating with third-party LLM services' APIs, such as OpenAI, Tongyi, Wenxin, or Llama.cpp.
+
+DB-GPT provides set proxy api to support LLM api.
+
+As our project has the ability to achieve ChatGPT performance of over 85%, 
+
+##### High hardware requirements
+The high hardware requirements mode is suitable for independently deploying LLM services, such as Llama series models, Baichuan, ChatGLM, Vicuna, and other private LLM service.
+there are certain hardware requirements. However, overall, the project can be deployed and used on consumer-grade graphics cards. The specific hardware requirements for deployment are as follows:
 
 | GPU      | VRAM Size | Performance                                 |
 |----------|-----------| ------------------------------------------- |
@@ -16,7 +27,7 @@ As our project has the ability to achieve ChatGPT performance of over 85%, there
 | V100     | 16 GB     | Conversation inference possible, noticeable stutter |
 | T4       | 16 GB     | Conversation inference possible, noticeable stutter |
 
-if your VRAM Size is not enough, DB-GPT supported 8-bit quantization and 4-bit quantization.
+If your VRAM Size is not enough, DB-GPT supported 8-bit quantization and 4-bit quantization.
 
 Here are some of the VRAM size usage of the models we tested in some common scenarios.
 
@@ -49,12 +60,8 @@ For the entire installation process of DB-GPT, we use the miniconda3 virtual env
 python>=3.10
 conda create -n dbgpt_env python=3.10
 conda activate dbgpt_env
-pip install -e .
-```
-Before use DB-GPT Knowledge
-```bash
-python -m spacy download zh_core_web_sm
-
+# it will take some minutes
+pip install -e ".[default]"
 ```
 
 Once the environment is installed, we have to create a new folder "models" in the DB-GPT project, and then we can put all the models downloaded from huggingface in this directory
@@ -64,28 +71,36 @@ Notice make sure you have install git-lfs
 
 centos:yum install git-lfs
 
-ubuntu:app-get install git-lfs
+ubuntu:apt-get install git-lfs
 
 macos:brew install git-lfs
+```
+##### Download LLM Model and Embedding Model
+
+If you use OpenAI llm service, see [LLM Use FAQ](https://db-gpt.readthedocs.io/en/latest/getting_started/faq/llm/llm_faq.html)
+
+```{tip}
+If you use openai or Axzure or tongyi llm api service, you don't need to download llm model.
+
 ```
 
 ```bash
 cd DB-GPT
 mkdir models and cd models
-#### llm model
-git clone https://huggingface.co/lmsys/vicuna-13b-v1.5
-or
-git clone https://huggingface.co/THUDM/chatglm2-6b
 
 #### embedding model
 git clone https://huggingface.co/GanymedeNil/text2vec-large-chinese
 or
 git clone https://huggingface.co/moka-ai/m3e-large
+
+#### llm model, if you use openai or Azure or tongyi llm api service, you don't need to download llm model
+git clone https://huggingface.co/lmsys/vicuna-13b-v1.5
+or
+git clone https://huggingface.co/THUDM/chatglm2-6b
+
 ```
 
 The model files are large and will take a long time to download. During the download, let's configure the .env file, which needs to be copied and created from the .env.template
-
-if you want to use openai llm service, see [LLM Use FAQ](https://db-gpt.readthedocs.io/en/latest/getting_started/faq/llm/llm_faq.html)
 
 ```{tip}
 cp .env.template .env
@@ -97,7 +112,7 @@ You can configure basic parameters in the .env file, for example setting LLM_MOD
 
 ### 3. Run
 
-**(Optional) load examples into SQLlite**
+**(Optional) load examples into SQLite**
 ```bash
 bash ./scripts/examples/load_examples.sh
 ```
@@ -107,7 +122,7 @@ On windows platform:
 .\scripts\examples\load_examples.bat
 ```
 
-1.Run db-gpt server 
+Run db-gpt server 
 
 ```bash
 python pilot/server/dbgpt_server.py
@@ -115,19 +130,6 @@ python pilot/server/dbgpt_server.py
 
 Open http://localhost:5000 with your browser to see the product.
 
-```{tip}
-If you want to access an external LLM service, you need to
-
-1.set the variables LLM_MODEL=YOUR_MODEL_NAME, MODEL_SERVER=YOUR_MODEL_SERVER（eg:http://localhost:5000） in the .env file.
-
-2.execute dbgpt_server.py in light mode
-```
-
-If you want to learn about dbgpt-webui, read https://github./csunny/DB-GPT/tree/new-page-framework/datacenter
-
-```bash
-python pilot/server/dbgpt_server.py --light
-```
 
 ### Multiple GPUs
 

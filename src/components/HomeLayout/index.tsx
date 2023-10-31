@@ -155,7 +155,7 @@ export default function HomeLayout() {
                 </p>
               </div>
             </Link>
-            <Link to='/docs/community/wechat' className='further__card'>
+            <Link to='https://github.com/eosphoros-ai/DB-GPT/blob/main/assets/wechat.jpg' className='further__card'>
               <div className='further__section'>
                 <div className='further__icon'>
                   <CommWechat />
@@ -164,7 +164,7 @@ export default function HomeLayout() {
                   Wechat Group
                 </h3>
                 <p className='further__description'>
-                  2000+ developers here to learn and communicate with you.
+                  3000+ developers here to learn and communicate with you.
                 </p>
               </div>
             </Link>
