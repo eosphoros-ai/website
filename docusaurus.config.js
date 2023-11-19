@@ -123,7 +123,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      defaultClassicDocs: '/docs/getting_started',
+      defaultClassicDocs: '/docs/get_started',
       // Replace with your project's social card
       navbar: {
         logo: {
