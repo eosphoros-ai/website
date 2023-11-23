@@ -131,7 +131,6 @@ const config = {
           src: 'img/dbgpt_logo.png',
           srcDark: 'img/DB-GPT_LOGO_White.png',
         },
-
         items: [
           {
             type: 'docSidebar',
