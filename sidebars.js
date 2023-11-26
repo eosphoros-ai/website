@@ -29,6 +29,10 @@ const sidebars = {
       label: "Quickstart",
       
     },
+    {
+      type: "doc", 
+      id: "awel",
+    },
 
     {
       type: "category",
@@ -202,7 +206,7 @@ const sidebars = {
 
     {
       type: "doc",
-      id:"commom_problem"
+      id:"faq"
     },
     
     {
@@ -212,25 +216,16 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'changelog/user_manual_v0.3.0',
-        },
-        {
-          type: 'doc',
           id: 'changelog/doc',
         },
       ],
-      
-      link: {
-        type: "generated-index",
-        description: "commom_problem",
-        slug: "commom_problem",
-      }
+  
     },
 
     {
       type: "doc", 
-      id: "example",
-      label: "Example"
+      id: "use_cases",
+      label: "Use Cases"
     },
   ]
 };
