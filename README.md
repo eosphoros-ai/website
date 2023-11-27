@@ -1,24 +1,23 @@
 # DB-GPT Website
 
-[DB-GPT Website](http://dbgpt.site) 
+## Quick Start
 
-## How to develop
-```commandline
+### Install dependencies 
+- Clone current project firstly!
+- Install docusaurus dependencies, generate node_modules folder.
 
-# clone current project firstly!
-# install docusaurus dependencies, generate node_modules folder.
+```
 sudo yarn install
+```
 
-# build project, generate .docusaurus folder.
-sudo npm run build 
-
-# launch project.
-npm run serve
+### launch
+``` 
+yarn start
 ```
 
 The default service starts on port `3000`, visit `localhost:3000`
 
-## Quick Start
+## Docker development 
 
 ```commandline
 docker build -t dbgptweb .

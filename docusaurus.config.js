@@ -33,6 +33,14 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'zh-CN'],
   },
+
+  scripts: [
+    {
+      src: '/redirect.js',
+      async: true,
+    },
+  ],
+
   plugins: [
     () => ({
       name: "custom-webpack-config",
@@ -130,6 +138,7 @@ const config = {
           alt: 'DB-GPT Logo',
           src: 'img/dbgpt_logo.png',
           srcDark: 'img/DB-GPT_LOGO_White.png',
+          href: "/docs/overview"
         },
 
         items: [
