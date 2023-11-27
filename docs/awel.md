@@ -8,7 +8,7 @@ AWEL adopts a layered API design. AWEL's layered API design architecture is show
 
 
 <p align="left">
-  <img src={'/img/awel.png'} width="480px" />
+  <img src={'/img/awel.png'} width="480px"/>
 </p>
 
 ## AWEL Design
