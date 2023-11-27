@@ -10,7 +10,7 @@ DB-GPT is an **open-source framework for large language models(LLMs) in the data
 -  **RAG(Retrieval Augmented Generation) Framework and Optimization**
 -  **Data-Driven Agents Framework Collaboration**
 
-In the Data 3.0 era, enterprises/developers can build their own exclusive applications with less code based on llm and databases.
+In the Data 3.0 era, enterprises/developers can build their own exclusive applications with less code based on LLMs and databases.
 
 <p align="left">
   <img src={'/img/dbgpt.png'} width="680px" />

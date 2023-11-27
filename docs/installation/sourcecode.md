@@ -64,10 +64,19 @@ DB-GPT can be deployed on servers with lower hardware through proxy model, or as
 :::
 ### Proxy model
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-#### OpenAI
-
-Install dependencies
+<Tabs
+  defaultValue="openai"
+  values={[
+    {label: 'Open AI', value: 'openai'},
+    {label: 'Qwen', value: 'qwen'},
+    {label: 'ChatGLM', value: 'chatglm'},
+    {label: 'ERNIE Bot', value: 'erniebot'},
+  ]}>
+  <TabItem value="openai" label="open ai">
+  Install dependencies
 
 ```python
 pip install  -e ".[openai]"
@@ -89,9 +98,8 @@ LLM_MODEL=chatgpt_proxyllm
 PROXY_API_KEY={your-openai-sk}
 PROXY_SERVER_URL=https://api.openai.com/v1/chat/completions
 ```
-
-#### Qwen
-
+  </TabItem>
+  <TabItem value="qwen" label="通义千问">
 Install dependencies
 
 ```python
@@ -119,9 +127,8 @@ LLM_MODEL=tongyi_proxyllm
 TONGYI_PROXY_API_KEY={your-tongyi-sk}
 PROXY_SERVER_URL={your_service_url}
 ```
-
-#### ChatGLM
-
+  </TabItem>
+  <TabItem value="chatglm" label="chatglm" >
 Install dependencies
 
 ```python
@@ -149,10 +156,9 @@ PROXY_SERVER_URL={your_service_url}
 ZHIPU_MODEL_VERSION={version}
 ZHIPU_PROXY_API_KEY={your-zhipu-sk}
 ```
+  </TabItem>
 
-
-#### ERNIE Bot
-
+  <TabItem value="erniebot" label="文心一言" default>
 
 Download embedding model
 
@@ -170,11 +176,15 @@ Configure the proxy and modify LLM_MODEL, PROXY_API_URL and API_KEY in the `.env
 
 ```python
 # .env
-LLM_MODEL=zhipu_proxyllm
+LLM_MODEL=wenxin_proxyllm
 PROXY_SERVER_URL={your_service_url}
-ZHIPU_MODEL_VERSION={version}
-ZHIPU_PROXY_API_KEY={your-zhipu-sk}
+WEN_XIN_MODEL_VERSION={version}
+WEN_XIN_API_KEY={your-wenxin-sk}
+WEN_XIN_SECRET_KEY={your-wenxin-sct}
 ```
+  </TabItem>
+</Tabs>
+
 
 :::info note
 
@@ -183,8 +193,14 @@ ZHIPU_PROXY_API_KEY={your-zhipu-sk}
 
 
 ### Local model
-
-#### Vicuna
+<Tabs
+  defaultValue="vicuna"
+  values={[
+    {label: 'Vicuna', value: 'vicuna'},
+    {label: 'Baichuan', value: 'baichuan'},
+    {label: 'ChatGLM', value: 'chatglm'},
+  ]}>
+  <TabItem value="vicuna" label="vicuna">
 
 ##### Hardware requirements description
 | Model    		    |   Quantize   |  VRAM Size   	| 
@@ -214,8 +230,9 @@ git clone https://huggingface.co/lmsys/vicuna-13b-v1.5
 # .env
 LLM_MODEL=vicuna-13b-v1.5
 ```
+  </TabItem>
 
-#### Baichuan
+  <TabItem value="baichuan" label="baichuan">
 
 ##### Hardware requirements description
 | Model    		    |   Quantize   |  VRAM Size   	| 
@@ -225,10 +242,8 @@ LLM_MODEL=vicuna-13b-v1.5
 |Baichuan-13b     	|   4-bit      |  12GB        	|
 |Baichuan-13b       |   8-bit      |  20GB          |
 
-
-```
-
 ##### Download LLM
+
 
 ```python
 cd DB-GPT
@@ -250,8 +265,9 @@ git clone https://huggingface.co/baichuan-inc/Baichuan2-13B-Chat
 # .env
 LLM_MODEL=baichuan2-13b
 ```
+  </TabItem>
 
-#### ChagtGLM
+  <TabItem value="chatglm" label="chatglm">
 
 ##### Hardware requirements description
 | Model    		    |   Quantize   |  VRAM Size   	| 
@@ -260,8 +276,6 @@ LLM_MODEL=baichuan2-13b
 |ChatGLM-6b 	  	|   8-bit	   |  9GB           |
 |ChatGLM-6b       	|   FP16       |  14GB        	|
 
-
-```
 
 ##### Download LLM
 
@@ -283,7 +297,9 @@ git clone https://huggingface.co/THUDM/chatglm2-6b
 # .env
 LLM_MODEL=chatglm2-6b
 ```
+  </TabItem>
 
+</Tabs>
 
 
 ### llama.cpp(CPU)
