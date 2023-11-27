@@ -13,13 +13,17 @@ The Chat DB usage process mainly includes the following steps:
 
 ### Select Chat DB
 
-<img src={'/img/chat_db/choose_chat_db.png'}/>
+<p align="left">
+  <img src={'/img/chat_db/choose_chat_db.png'} width="720px" />
+</p>
 
 
 
 ### Select DataBase
 
-<img src={'/img/chat_db/choose_db.png'}/>
+<p align="left">
+  <img src={'/img/chat_db/choose_db.png'} width="720px" />
+</p>
 
 
 ### Start Chat
@@ -29,21 +33,27 @@ The Chat DB usage process mainly includes the following steps:
 Single table query
 :::
 
-<img src={'/img/chat_db/single_table.png'}/>
+<p align="left">
+  <img src={'/img/chat_db/single_table.png'} width="720px" />
+</p>
 
 :::tip
 
 Multi-table query
 :::
 
-<img src={'/img/chat_db/multi_table.png'}/>
+<p align="left">
+  <img src={'/img/chat_db/multi_table.png'} width="720px" />
+</p>
 
 :::tip
 
 Index optimization suggestions
 :::
 
-<img src={'/img/chat_db/index.png'}/>
+<p align="left">
+  <img src={'/img/chat_db/index.png'} width="720px" />
+</p>
 
 
 :::tip
@@ -51,7 +61,9 @@ Index optimization suggestions
 Database problem diagnosis
 :::
 
-<img src={'/img/chat_db/problem_help.png'}/>
+<p align="left">
+  <img src={'/img/chat_db/problem_help.png'} width="720px" />
+</p>
 
 
 :::tip
@@ -59,7 +71,9 @@ Database problem diagnosis
 Troubleshoot slow queries
 :::
 
-<img src={'/img/chat_db/slow_query.png'}/>
+<p align="left">
+  <img src={'/img/chat_db/slow_query.png'} width="720px" />
+</p>
 
 
 :::danger Note

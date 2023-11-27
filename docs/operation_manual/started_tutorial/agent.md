@@ -13,23 +13,32 @@ The use of the default plugin mainly includes the following steps. For more adva
 ### View plugin list
 First, you can click the `Update GitHub plugin` button, and the plugin list in the [GitHub plugin repository](https://github.com/eosphoros-ai/DB-GPT-Plugins) will automatically be displayed here.
 
-<img src={'/img/plugin/show_plugin.png'}/>
+
+<p align="left">
+  <img src={'/img/plugin/show_plugin.png'} width="720px" />
+</p>
 
 ### Download plugin
 
 Click the `download` button to download the plugin locally
 
-<img src={'/img/plugin/download.png'}/>
+<p align="left">
+  <img src={'/img/plugin/download.png'} width="720px" />
+</p>
 
 After the download is successful, you can see the plugin list in the my plugin interface. Of course, it also supports uploading models through local upload.
 
-<img src={'/img/plugin/show_plugin_more.png'}/>
+<p align="left">
+  <img src={'/img/plugin/show_plugin_more.png'} width="720px" />
+</p>
 
 
 ### Select `Data Agent`
 Select the plugin dialog to enable plugin use.
 
-<img src={'/img/plugin/choose_plugin.png'}/>
+<p align="left">
+  <img src={'/img/plugin/choose_plugin.png'} width="720px" />
+</p>
 
 
 ### Configure cookies
@@ -42,7 +51,9 @@ Specify the corresponding cookie configuration items in the `.env` file to compl
 ### Start chat
 After configuring cookies, we can start using the plugin.
 
-<img src={'/img/chat_knowledge/chat.gif'}/>
+<p align="left">
+  <img src={'/img/plugin/chat.gif'} width="720px" />
+</p>
 
 
 :::info note

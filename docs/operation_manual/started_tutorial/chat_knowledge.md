@@ -24,33 +24,53 @@ The knowledge base operation process is relatively simple and is mainly divided 
 
 Select the knowledge base, click the `Create` button, and fill in the necessary information to complete the creation of the knowledge space.
 
-<img src={'/img/chat_knowledge/create_knowledge_base.png'}/>
+
+
+<p align="left">
+  <img src={'/img/chat_knowledge/create_knowledge_base.png'} width="720px" />
+</p>
+
 
 ### Upload documents
 
 Document addition currently supports multiple types, such as plain text, URL crawling, and various document types such as PDF, Word, and Markdown. Select a specific document to `upload`.
 
-<img src={'/img/chat_knowledge/upload_doc.png'}/>
+<p align="left">
+  <img src={'/img/chat_knowledge/upload_doc.png'} width="720px" />
+</p>
+
 
 Select the corresponding document and click `Finish`.
 
-<img src={'/img/chat_knowledge/upload_doc_finish.png'}/>
+
+<p align="left">
+  <img src={'/img/chat_knowledge/upload_doc_finish.png'} width="720px" />
+</p>
+
 
 ### Waiting for document vectorization
 
 Click on the `knowledge space` and observe the document `slicing` + `vectorization` status in the lower left corner. When the status reaches `FINISHED`, you can start a knowledge base conversation.
 
 
-<img src={'/img/chat_knowledge/waiting_doc_vector.png'}/>
+<p align="left">
+  <img src={'/img/chat_knowledge/waiting_doc_vector.png'} width="720px" />
+</p>
 
 
 ### Knowledge base chat
 
 Click the `Chat`button to start a conversation with the knowledge base.
 
-<img src={'/img/chat_knowledge/chat.gif'}/>
+
+<p align="left">
+  <img src={'/img/chat_knowledge/chat.gif'} width="720px" />
+</p>
+
 
 ### Reading assistant
 In addition to the above capabilities, you can also upload documents directly in the knowledge base dialogue window, and the document will be summarized by default. This capability can be used as a `reading assistant` to assist document reading.
 
-<img src={'/img/chat_knowledge/read_helper.gif'}/>
+<p align="left">
+  <img src={'/img/chat_knowledge/read_helper.gif'} width="720px" />
+</p>

@@ -27,22 +27,29 @@ python docker/examples/dashboard/test_case_mysql_data.py
 
 The steps to add a data source are the same as [Chat Data](/docs/operation_manual/started_tutorial/chat_data.mdx). Select the corresponding database type in the data source management tab, then create it. Fill in the necessary information to complete the creation.
 
+<p align="left">
+  <img src={'/img/chat_dashboard/add_data.png'} width="720px" />
+</p>
 
-<img src={'/img/chat_dashboard/add_data.png'}/>
 
 
 ### Select Chat Dashboard
 
 After the data source is added, select `Chat Dashboard` on the home scene page to perform report analysis.
 
-<img src={'/img/chat_dashboard/choose_chat_dashboard.png'}/>
+<p align="left">
+  <img src={'/img/chat_dashboard/choose_chat_dashboard.png'} width="720px" />
+</p>
+
 
 
 ### Start chat
 Enter specific questions in the dialog box on the right to start a data conversation.
 
+<p align="left">
+  <img src={'/img/chat_dashboard/preview.png'} width="720px" />
+</p>
 
-<img src={'/img/chat_dashboard/preview.png'}/>
 
 
 :::info note
@@ -52,4 +59,6 @@ Enter specific questions in the dialog box on the right to start a data conversa
 
 Of course, in addition to `preview mode`, `editor mode` is also provided. In editor mode, SQL can be edited and modified. You can see the changes in the chart synchronously.
 
-<img src={'/img/chat_dashboard/edit.png'}/>
+<p align="left">
+  <img src={'/img/chat_dashboard/edit.png'} width="720px" />
+</p>

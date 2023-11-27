@@ -7,7 +7,9 @@ without paying attention to cumbersome model and environment details.
 AWEL adopts a layered API design. AWEL's layered API design architecture is shown in the figure below.
 
 
-<img src={'/img/awel.png'}/>
+<p align="left">
+  <img src={'/img/awel.png'} width="720px" />
+</p>
 
 ## AWEL Design
 
@@ -64,11 +66,16 @@ with DAG("simple_rag_example") as dag:
 ```
 Bit operations will arrange the entire process in the form of DAG
 
-<img src={'/img/awel_dag_flow.png'}/>
+<p align="left">
+  <img src={'/img/awel_dag_flow.png'} width="720px" />
+</p>
 
 #### Example of LLM + cache
 
-<img src={'/img/awel_cache_flow.png'}/>
+<p align="left">
+  <img src={'/img/awel_cache_flow.png'} width="720px" />
+</p>
+
 
 ###  AgentFream Example
 ```python
@@ -87,7 +94,7 @@ result.write_to_sink(type='source_slink')
 
 ### DSL Example
 
-```
+``` python
 CREATE WORKFLOW RAG AS
 BEGIN
     DATA requestData = RECEIVE REQUEST FROM 

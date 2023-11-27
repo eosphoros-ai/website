@@ -35,8 +35,8 @@ In the Data 3.0 era, enterprises/developers can build their own exclusive applic
 
 ## Getting Started
 
- - [Quickstart](/docs/quickstart.mdx)
- - [Installation](/docs/installation/installation.mdx)
+ - [Quickstart](/docs/quickstart)
+ - [Installation](/docs/installation)
 
 
 ## Terminology
@@ -51,35 +51,35 @@ In the Data 3.0 era, enterprises/developers can build their own exclusive applic
 |<center> `Embedding`  </center>   | Methods to convert text, audio, video and other materials into vectors |
 |<center> `RAG`   </center>| Retrieval Augmented Generation |
 
-## Example
+## Use Cases
 
-- [Example](/docs/example/example.mdx)
+- [Use Cases](/docs/use_cases)
 
 ## Modules
 
-#### [SMMF](/docs/modules/smmf.mdx)
+#### [SMMF](/docs/modules/smmf)
 Service-oriented Multi-model Management Framework 
 
-#### [Retrieval](/docs/modules/rag.mdx)
+#### [Retrieval](/docs/modules/rag)
 Multi-Knowledge Enhanced Retrieval-Augmented Generation Framework
 
-#### [Agents](/docs/modules/dd-agents.mdx)
+#### [Agents](/docs/modules/agent)
 Data Driven Multi-Agents
 
-#### [Fine-tuning](/docs/modules/fine-tuning.mdx)
+#### [Fine-tuning](/docs/modules/fine_tuning)
 Fine-tuning module for Text2SQL/Text2DSL
 
 
 ## More
 
-- [GBI](/docs/modules/gbi.mdx)
+- [GBI](/docs/modules/visual)
 Generative Business Intelligence tools
 
-- [Connections](/docs/modules/connections.mdx) 
+- [Connections](/docs/modules/connections) 
 Connect various data sources
 
-- [Obvervablity](/docs/modules/obvervablity.mdx)
+- [Obvervablity](/docs/operation_manual/advanced_tutorial/debugging)
 Observing & monitoring
 
-- [Evaluation](/docs/modules/evaluation.mdx)
+- [Evaluation](/docs/modules/eval)
 Evaluate framework performance and accuracy

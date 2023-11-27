@@ -7,7 +7,7 @@ DB-GPT supports the installation and use of a variety of open source and closed 
 
 
 :::info note
-- Detailed installation and deployment tutorials can be found in [Installation](/docs/installation/installation.mdx).
+- Detailed installation and deployment tutorials can be found in [Installation](/docs/installation).
 - This page only introduces deployment based on ChatGPT proxy and local Vicuna model.
 :::
 
@@ -27,7 +27,7 @@ git clone https://github.com/eosphoros-ai/DB-GPT.git
 
 ### Miniconda environment installation
 
-- The default database uses SQLite, so there is no need to install a database in the default startup mode. If you need to use other databases, you can read the [advanced tutorials](/docs/operation_manual/advanced_tutorial) below. We recommend installing the Python virtual environment through the conda virtual environment. For the installation of Miniconda environment, please refer to the [Miniconda installation tutorial](https://docs.conda.io/projects/miniconda/en/latest/).
+- The default database uses SQLite, so there is no need to install a database in the default startup mode. If you need to use other databases, you can read the [advanced tutorials](/docs/operation_manual/advanced_tutorial/rag) below. We recommend installing the Python virtual environment through the conda virtual environment. For the installation of Miniconda environment, please refer to the [Miniconda installation tutorial](https://docs.conda.io/projects/miniconda/en/latest/).
 
 :::tip
 Create a Python virtual environment
@@ -96,17 +96,17 @@ PROXY_SERVER_URL=https://api.openai.com/v1/chat/completions
 
 #### Hardware requirements description
 ```python
-	|-------------------|--------------|----------------|
-	| Model    		    |   Quantize   |  VRAM Size   	| 
-    |------------------ |--------------|----------------|
-    |Vicuna-7b-1.5     	|   4-bit      |  8GB         	|
-    |-------------------|--------------|----------------|
-    |Vicuna-7b-1.5 		|   8-bit	   |  12GB        	|
-    |-------------------|--------------|----------------|
-    |vicuna-13b-v1.5   	|   4-bit      |  12GB        	|
-    |-------------------|--------------|----------------|
-    |vicuna-13b-v1.5    |   8-bit      |  24GB          |
-    |-------------------|--------------|----------------|
+|-------------------|--------------|----------------|
+| Model    		    |   Quantize   |  VRAM Size   	| 
+|------------------ |--------------|----------------|
+|Vicuna-7b-1.5     	|   4-bit      |  8GB         	|
+|-------------------|--------------|----------------|
+|Vicuna-7b-1.5 		|   8-bit	   |  12GB        	|
+|-------------------|--------------|----------------|
+|vicuna-13b-v1.5   	|   4-bit      |  12GB        	|
+|-------------------|--------------|----------------|
+|vicuna-13b-v1.5    |   8-bit      |  24GB          |
+|-------------------|--------------|----------------|
 
 ```
 

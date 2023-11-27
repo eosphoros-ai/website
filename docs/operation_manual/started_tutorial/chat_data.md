@@ -19,13 +19,18 @@ To start a data conversation, you need to go through the following steps:
 
 First, select the `data source` on the left to add and add a database. Currently, DB-GPT supports multiple database types. Just select the corresponding database type to add. Here we choose MySQL as a demonstration. For the test data of the demonstration, see the [test sample](https://github.com/eosphoros-ai/DB-GPT/tree/main/docker/examples/sqls).
 
-<img src={'/img/chat_data/add_data.png'}/>
+
+<p align="left">
+  <img src={'/img/chat_data/add_data.png'} width="720px" />
+</p>
+
 
 
 ### Choose ChatData
 
-<img src={'/img/chat_data/choose_type.png'}/>
-
+<p align="left">
+  <img src={'/img/chat_data/choose_type.png'} width="720px" />
+</p>
 
 ### Start a conversation
 
@@ -41,7 +46,11 @@ First, select the `data source` on the left to add and add a database. Currently
 preview mode
 :::
 
-<img src={'/img/chat_data/start_chat.gif'}/>
+
+<p align="left">
+  <img src={'/img/chat_data/start_chat.gif'} width="720px" />
+</p>
+
 
 
 :::tip
@@ -49,5 +58,7 @@ preview mode
 editing mode
 :::
 
+<p align="left">
+  <img src={'/img/chat_data/edit.png'} width="720px" />
+</p>
 
-<img src={'/img/chat_data/edit.png'}/>

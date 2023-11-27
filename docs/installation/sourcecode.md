@@ -2,11 +2,15 @@
 
 ## Environmental requirements
 
-| Startup Mode         | CPU * MEM    |       GPU      |         Remark                                            |
-|----------------------|--------------|----------------|-----------------------------------------------------------|
-| Proxy model          | 4C * 8G      |        None    |  Proxy model does not rely on GPU                         |
-| Local model          | 8C * 32G     |       24G      |  It is best to start locally with a GPU of 24G or above   |
- 
+| Startup Mode         | CPU * MEM    |       GPU      |         Remark  |
+|:--------------------:|:------------:|:--------------:|:---------------:|
+|     Proxy model          |    4C * 8G      |        None    |  Proxy model does not rely on GPU                         |
+|     Local model          |    8C * 32G     |       24G      |  It is best to start locally with a GPU of 24G or above   |
+
+
+
+
+
 
 ### Download source code
 
@@ -184,17 +188,17 @@ ZHIPU_PROXY_API_KEY={your-zhipu-sk}
 
 ##### Hardware requirements description
 ```python
-	|-------------------|--------------|----------------|
-	| Model    		    |   Quantize   |  VRAM Size   	| 
-    |------------------ |--------------|----------------|
-    |Vicuna-7b-1.5     	|   4-bit      |  8GB         	|
-    |-------------------|--------------|----------------|
-    |Vicuna-7b-1.5 		|   8-bit	   |  12GB        	|
-    |-------------------|--------------|----------------|
-    |vicuna-13b-v1.5   	|   4-bit      |  12GB        	|
-    |-------------------|--------------|----------------|
-    |vicuna-13b-v1.5    |   8-bit      |  24GB          |
-    |-------------------|--------------|----------------|
+|-------------------|--------------|----------------|
+| Model    		    |   Quantize   |  VRAM Size   	| 
+|------------------ |--------------|----------------|
+|Vicuna-7b-1.5     	|   4-bit      |  8GB         	|
+|-------------------|--------------|----------------|
+|Vicuna-7b-1.5 		|   8-bit	   |  12GB        	|
+|-------------------|--------------|----------------|
+|vicuna-13b-v1.5   	|   4-bit      |  12GB        	|
+|-------------------|--------------|----------------|
+|vicuna-13b-v1.5    |   8-bit      |  24GB          |
+|-------------------|--------------|----------------|
 
 ```
 

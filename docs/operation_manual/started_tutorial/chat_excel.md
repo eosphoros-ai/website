@@ -2,7 +2,10 @@
 
 Chat Excel means that you can interpret and analyze Excel data through natural language dialogue.
 
-<img src={'/img/chat_excel/excel.png'}/>
+
+<p align="left">
+  <img src={'/img/chat_excel/excel.png'} width="720px" />
+</p>
 
 
 ## Steps
@@ -14,7 +17,10 @@ The steps to use Chat Excel are relatively simple and are mainly divided into th
 
 ### Select `Chat Excel` 
 
-<img src={'/img/chat_excel/choose_excel.png'}/>
+
+<p align="left">
+  <img src={'/img/chat_excel/choose_excel.png'} width="720px" />
+</p>
 
 ### Upload Excel document
 
@@ -24,19 +30,27 @@ The steps to use Chat Excel are relatively simple and are mainly divided into th
 ⚠️ the Excel file format is converted to `.csv` format
 :::
 
-<img src={'/img/chat_excel/upload_excel.png'}/>
+<p align="left">
+  <img src={'/img/chat_excel/upload_excel.png'} width="720px" />
+</p>
 
 After the upload is successful, the content will be summarized by default and some questioning strategies will be recommended.
 
-<img src={'/img/chat_excel/upload_finish.png'}/>
+<p align="left">
+  <img src={'/img/chat_excel/upload_finish.png'} width="720px" />
+</p>
 
 ### Start chat
 
 You can then start a conversation based on the uploaded file.
 
-<img src={'/img/chat_excel/chat.gif'}/>
+<p align="left">
+  <img src={'/img/chat_excel/chat.gif'} width="720px" />
+</p>
 
 
 Use open source models
 
-<img src={'/img/chat_excel/use_vicuna.gif'}/>
+<p align="left">
+  <img src={'/img/chat_excel/use_vicuna.gif'} width="720px" />
+</p>
