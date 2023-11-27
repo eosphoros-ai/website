@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const { ProvidePlugin } = require("webpack");
+const path = require("path");
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -29,8 +31,50 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-CN'],
   },
+  plugins: [
+    () => ({
+      name: "custom-webpack-config",
+      configureWebpack: () => ({
+        plugins: [
+          new ProvidePlugin({
+            process: require.resolve("process/browser"),
+          }),
+        ],
+        resolve: {
+          fallback: {
+            path: false,
+            url: false,
+          },
+        },
+        module: {
+          rules: [
+            {
+              test: /\.m?js/,
+              resolve: {
+                fullySpecified: false,
+              },
+            },
+            {
+              test: /\.py$/,
+              loader: "raw-loader",
+              resolve: {
+                fullySpecified: false,
+              },
+            },
+            {
+              test: /\.ipynb$/,
+              loader: "raw-loader",
+              resolve: {
+                fullySpecified: false,
+              },
+            },
+          ],
+        },
+      }),
+    }),
+  ],
 
   presets: [
     [
@@ -39,18 +83,36 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [
+            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
+          ],
+
+          async sidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }){
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            sidebarItems.forEach((subItem) => {
+              // This allows breaking long sidebar labels into multiple lines 
+              // by inserting a zero-width space after each slash.
+              if (
+                "label" in subItem && 
+                subItem.label && 
+                subItem.label.includes("/")
+              ){
+                subItem.label = subItem.label.replace("/\//g", "\u200B");
+              }
+            });
+            return sidebarItems;
+          }
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/eosphoros-ai/DB-GPT/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/eosphoros-ai/DB-GPT/tree/main/',
+        
+        pages: {
+          remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")],
         },
+      
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -61,7 +123,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      defaultClassicDocs: '/docs/getting_started',
+      defaultClassicDocs: '/docs/get_started',
       // Replace with your project's social card
       navbar: {
         logo: {
@@ -69,41 +131,50 @@ const config = {
           src: 'img/dbgpt_logo.png',
           srcDark: 'img/DB-GPT_LOGO_White.png',
         },
+
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'right',
-            label: 'DOC',
+            position: 'left',
+            label: 'Docs',
+            to: "/docs/overview",
           },
-          {to: '/blog', label: 'BLOG', position: 'right'},
           {
-            to: 'https://github.com/eosphoros-ai/DB-GPT',
-            label: 'GITHUB',
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorials',
+            to: "/docs/tutorials",
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Community',
+            to: "/docs/tutorials",
+          },
+          {
+            href: 'https://github.com/eosphoros-ai/DB-GPT',
             position: 'right',
+            className: 'header-github-link',
+          },
+          {
+            href: 'https://huggingface.co/eosphoros',
+            position: 'right',
+            label: "HuggingFace",
+            className: 'header-huggingface-link',
+          },
+          {
+            href: 'https://www.yuque.com/eosphoros/dbgpt-docs/bex30nsv60ru0fmx',
+            position: 'left',
+            label: "中文文档",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Getting Started',
-                to: '/docs/getting_started',
-              },
-              {
-                label: 'Modules',
-                to: '/docs/modules',
-              },
-              {
-                label: 'Use Cases',
-                to: '/docs/use_cases/sql_generation_and_diagnosis',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -112,14 +183,23 @@ const config = {
                 href: 'https://discord.gg/erwfqcMP',
               },
               {
-                label: 'Gitee',
-                href: 'https://gitee.com/mirrors/DB-GPT',
+                label: "Dockerhub",
+                href: "https://hub.docker.com/u/eosphorosai",
               },
+            ],
+          },
+          {
+            title: "Github",
+            items: [
               {
                 label: 'Github',
                 href: 'https://github.com/eosphoros-ai/DB-GPT',
               },
-            ],
+              {
+                label: "HuggingFace",
+                href: "https://huggingface.co/eosphoros"
+              }
+            ]
           },
           {
             title: 'More',
@@ -129,12 +209,8 @@ const config = {
                 href: 'https://news.ycombinator.com/item?id=36038815',
               },
               {
-                label: 'Bilibili',
-                href: 'https://www.bilibili.com/video/BV1mu411Y7ve/?spm_id_from=333.337.search-card.all.click',
-              },
-              {
-                label: 'Zhihu',
-                href: 'https://www.zhihu.com/people/chen-wen-60-40',
+                label: 'Twitter',
+                href: 'https://twitter.com/DbGpt80100',
               },
             ],
           },
@@ -146,7 +222,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
