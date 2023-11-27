@@ -146,26 +146,24 @@ const config = {
             label: 'Tutorials',
             to: "/docs/tutorials",
           },
-
           {
-            to: '/Community', 
-            label: 'Community', 
-            position: 'left'},
-          // Please keep GitHub link to the right for consistency.
-
-          {
-            href: "https://github.com/eosphoros-ai/DB-GPT",
-            position: "right",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Community',
+            to: "/docs/tutorials",
           },
-
           {
-            href: "https://github.com/eosphoros-ai/DB-GPT",
-            position: "right",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
+            href: 'https://github.com/eosphoros-ai/DB-GPT',
+            position: 'right',
+            className: 'header-github-link',
           },
+          // {
+          //   href: 'https://huggingface.co/eosphoros',
+          //   position: 'right',
+          //   className: 'header-huggingface-link',
+          // },
+
         ],
       },
       footer: {
