@@ -3,7 +3,7 @@ sidebar_position: 0
 ---
 
 # Quickstart
-DB-GPT supports the installation and use of a variety of open source and closed source models. Different models have different requirements for environment and resources. If localized model deployment is required, GPU resources are required for deployment. The API proxy model requires relatively few resources and can be deployed and started on a CPU machine.
+DB-GPT supports the installation and use of a variety of open source and closed models. Different models have different requirements for environment and resources. If localized model deployment is required, GPU resources are required for deployment. The API proxy model requires relatively few resources and can be deployed and started on a CPU machine.
 
 
 :::info note
@@ -95,20 +95,12 @@ PROXY_SERVER_URL=https://api.openai.com/v1/chat/completions
 ### Method 2. Vicuna local deployment
 
 #### Hardware requirements description
-```python
-|-------------------|--------------|----------------|
-| Model    		    |   Quantize   |  VRAM Size   	| 
-|------------------ |--------------|----------------|
-|Vicuna-7b-1.5     	|   4-bit      |  8GB         	|
-|-------------------|--------------|----------------|
-|Vicuna-7b-1.5 		|   8-bit	   |  12GB        	|
-|-------------------|--------------|----------------|
-|vicuna-13b-v1.5   	|   4-bit      |  12GB        	|
-|-------------------|--------------|----------------|
-|vicuna-13b-v1.5    |   8-bit      |  24GB          |
-|-------------------|--------------|----------------|
-
-```
+| Model    		                         |   Quantize   |  VRAM Size   	| 
+|:----------------------------------------:|--------------:|---------------|
+|Baichuan-7b     	                     |   4-bit      |  8GB         	|
+|Baichuan-7b  		                     |   8-bit	    |  12GB        	|
+|Baichuan-13b     	                     |   4-bit      |  12GB        	|
+|Baichuan-13b                            |   8-bit      |  20GB         |
 
 #### Download LLM
 
@@ -118,7 +110,7 @@ mkdir models and cd models
 
 # embedding model
 git clone https://huggingface.co/GanymedeNil/text2vec-large-chinese
-或者
+or
 git clone https://huggingface.co/moka-ai/m3e-large
 
 # llm model, if you use openai or Azure or tongyi llm api service, you don't need to download llm model
@@ -134,13 +126,12 @@ LLM_MODEL=vicuna-13b-v1.5
 
 ## Test data (optional)
 Load default test data into SQLite database
-- Linux
+- **Linux**
 
 ```python
 bash ./scripts/examples/load_examples.sh
-
 ```
-- Windows
+- **Windows**
 
 ```python
 .\scripts\examples\load_examples.bat
@@ -150,12 +141,11 @@ bash ./scripts/examples/load_examples.sh
 
 ```python
 python pilot/server/dbgpt_server.py
-
 ```
 
 
 ## Visit website
-Open the browser and visit `http://localhost:5000`
+Open the browser and visit [`http://localhost:5000`](http://localhost:5000)
 
 
 

@@ -3,16 +3,19 @@ sidebar_position: 0
 ---
 
 # Overview
-DB-GPT is an **open-source framework for large language models(llm) in the databases fields**. It's purpose is to build infrastructure for the domain of large language models, making it easier and more convenient to develop applications around databases by developing various technical capabilities such as:
+DB-GPT is an **open-source framework for large language models(LLMs) in the databases fields**. It's purpose is to build infrastructure for the domain of large language models, making it easier and more convenient to develop applications around databases by developing various technical capabilities such as:
 
 -  **SMMF(Service-oriented Multi-model Management Framework)**
 -  **Text2SQL Fine-tuning**
 -  **RAG(Retrieval Augmented Generation) Framework and Optimization**
 -  **Data-Driven Agents Framework Collaboration**
--  **GBI(Generative Business Intelligence)**
--  **etc**
 
 In the Data 3.0 era, enterprises/developers can build their own exclusive applications with less code based on llm and databases.
+
+<p align="left">
+  <img src={'/img/dbgpt.png'} width="680px" />
+</p>
+
 
 ## Features
 
@@ -71,9 +74,6 @@ Fine-tuning module for Text2SQL/Text2DSL
 
 
 ## More
-
-- [GBI](/docs/modules/visual)
-Generative Business Intelligence tools
 
 - [Connections](/docs/modules/connections) 
 Connect various data sources
