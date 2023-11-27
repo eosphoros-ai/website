@@ -283,14 +283,3 @@ Options:
                                   The output format
   --help                          Show this message and exit.
 ```
-
-
-# test
-
-
-The output is as follows:
-
-
-```python
-dbgpt trace --help
-```
