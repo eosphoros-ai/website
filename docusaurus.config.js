@@ -31,7 +31,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-CN'],
   },
   plugins: [
     () => ({
@@ -131,6 +131,7 @@ const config = {
           src: 'img/dbgpt_logo.png',
           srcDark: 'img/DB-GPT_LOGO_White.png',
         },
+
         items: [
           {
             type: 'docSidebar',
@@ -158,12 +159,17 @@ const config = {
             position: 'right',
             className: 'header-github-link',
           },
-          // {
-          //   href: 'https://huggingface.co/eosphoros',
-          //   position: 'right',
-          //   className: 'header-huggingface-link',
-          // },
-
+          {
+            href: 'https://huggingface.co/eosphoros',
+            position: 'right',
+            label: "HuggingFace",
+            className: 'header-huggingface-link',
+          },
+          {
+            href: 'https://www.yuque.com/eosphoros/dbgpt-docs/bex30nsv60ru0fmx',
+            position: 'left',
+            label: "中文文档",
+          },
         ],
       },
       footer: {

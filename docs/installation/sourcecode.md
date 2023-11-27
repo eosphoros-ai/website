@@ -187,20 +187,12 @@ ZHIPU_PROXY_API_KEY={your-zhipu-sk}
 #### Vicuna
 
 ##### Hardware requirements description
-```python
-|-------------------|--------------|----------------|
 | Model    		    |   Quantize   |  VRAM Size   	| 
 |------------------ |--------------|----------------|
 |Vicuna-7b-1.5     	|   4-bit      |  8GB         	|
-|-------------------|--------------|----------------|
 |Vicuna-7b-1.5 		|   8-bit	   |  12GB        	|
-|-------------------|--------------|----------------|
-|vicuna-13b-v1.5   	|   4-bit      |  12GB        	|
-|-------------------|--------------|----------------|
-|vicuna-13b-v1.5    |   8-bit      |  24GB          |
-|-------------------|--------------|----------------|
-
-```
+|Vicuna-13b-v1.5   	|   4-bit      |  12GB        	|
+|Vicuna-13b-v1.5    |   8-bit      |  24GB          |
 
 ##### Download LLM
 
@@ -226,18 +218,12 @@ LLM_MODEL=vicuna-13b-v1.5
 #### Baichuan
 
 ##### Hardware requirements description
-```python
-|-------------------|--------------|----------------|
 | Model    		    |   Quantize   |  VRAM Size   	| 
 |------------------ |--------------|----------------|
-|baichuan-7b     	|   4-bit      |  8GB         	|
-|-------------------|--------------|----------------|
-|baichuan-7b  		|   8-bit	   |  12GB          |
-|-------------------|--------------|----------------|
-|baichuan-13b     	|   4-bit      |  12GB        	|
-|-------------------|--------------|----------------|
-|baichuan-13b       |   8-bit      |  20GB          |
-|-------------------|--------------|----------------|
+|Baichuan-7b     	|   4-bit      |  8GB         	|
+|Baichuan-7b  		|   8-bit	   |  12GB          |
+|Baichuan-13b     	|   4-bit      |  12GB        	|
+|Baichuan-13b       |   8-bit      |  20GB          |
 
 
 ```
@@ -250,12 +236,12 @@ mkdir models and cd models
 
 # embedding model
 git clone https://huggingface.co/GanymedeNil/text2vec-large-chinese
-或者
+or
 git clone https://huggingface.co/moka-ai/m3e-large
 
 # llm model
 git clone https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat
-或者
+or
 git clone https://huggingface.co/baichuan-inc/Baichuan2-13B-Chat
 
 ```
@@ -268,16 +254,11 @@ LLM_MODEL=baichuan2-13b
 #### ChagtGLM
 
 ##### Hardware requirements description
-```python
-|-------------------|--------------|----------------|
 | Model    		    |   Quantize   |  VRAM Size   	| 
 |------------------ |--------------|----------------|
 |ChatGLM-6b     	|   4-bit      |  7GB         	|
-|-------------------|--------------|----------------|
 |ChatGLM-6b 	  	|   8-bit	   |  9GB           |
-|-------------------|--------------|----------------|
 |ChatGLM-6b       	|   FP16       |  14GB        	|
-|-------------------|--------------|----------------|
 
 
 ```
@@ -361,13 +342,13 @@ Modify the `.env` file to use llama.cpp, and then you can start the service by r
 
 ## Test data (optional)
 The DB-GPT project has a part of test data built-in by default, which can be loaded into the local database for testing through the following command
-- Linux
+- **Linux**
 
 ```python
 bash ./scripts/examples/load_examples.sh
 
 ```
-- Windows
+- **Windows**
 
 ```python
 .\scripts\examples\load_examples.bat
@@ -377,6 +358,7 @@ bash ./scripts/examples/load_examples.sh
 The DB-GPT service is packaged into a server, and the entire DB-GPT service can be started through the following command.
 ```python
 python pilot/server/dbgpt_server.py
-
 ```
 
+## Visit website
+Open the browser and visit [`http://localhost:5000`](http://localhost:5000)
